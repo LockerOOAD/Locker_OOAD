@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="locker.CustomerRegisterController">
+   <children>
+      <Label layoutX="289.0" layoutY="14.0" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="46.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="125.0" text="Name :" textFill="#ff781e">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="171.0" text="E-mail :" textFill="#ff781e">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="213.0" text="Tel :" textFill="#ff781e">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="254.0" text="ID card Number :" textFill="#ff781e">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="295.0" text="Choss your plan :" textFill="#ff781e">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="name" layoutX="126.0" layoutY="126.0" />
+      <JFXTextField fx:id="email" layoutX="126.0" layoutY="172.0" />
+      <JFXTextField fx:id="tel" layoutX="126.0" layoutY="214.0" />
+      <JFXTextField fx:id="idCardNumber" layoutX="184.0" layoutY="255.0" />
+      <JFXComboBox fx:id="plan" accessibleText="uol" layoutX="184.0" layoutY="296.0" prefHeight="25.0" prefWidth="135.0" />
+      <JFXButton fx:id="RegisterButton" layoutX="308.0" layoutY="349.0" onAction="#addData" style="-fx-background-color: #393939;" text="Register!" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="BackButton" layoutX="16.0" layoutY="349.0" onAction="#backToLogin" style="-fx-background-color: #393939;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="203.0" fitWidth="195.0" layoutX="460.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/regis_s.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="42.0" layoutY="82.0" text="Usrname :" textFill="#ff781e">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="username" layoutX="126.0" layoutY="83.0" />
+      <Label layoutX="302.0" layoutY="90.0" text="Password :" textFill="#ff781e">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="password" layoutX="405.0" layoutY="91.0" />
+      <Label fx:id="notiSameUsername" layoutX="126.0" layoutY="63.0" prefHeight="17.0" prefWidth="135.0" />
+   </children>
+</AnchorPane>
