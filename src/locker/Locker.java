@@ -25,7 +25,7 @@ public class Locker extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("CustomerRegister.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("SelectRole.fxml"));
         
         Scene scene = new Scene(root);
         

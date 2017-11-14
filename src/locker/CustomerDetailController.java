@@ -64,6 +64,17 @@ public class CustomerDetailController implements Initializable {
         window.show();
     }
     
+    public void changeToReserveLocker(ActionEvent event) throws IOException{
+        
+        Parent reserveLockerParent = FXMLLoader.load(getClass().getResource("ReserveLocker.fxml"));
+        Scene ReserveLocker = new Scene(reserveLockerParent);
+        
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        
+        window.setScene(ReserveLocker);
+        window.show();
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         

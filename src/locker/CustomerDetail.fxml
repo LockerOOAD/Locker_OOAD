@@ -2,14 +2,16 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #7F7F7F;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="locker.CustomerDetailController">
    <children>
-      <Label layoutX="473.0" layoutY="44.0" prefHeight="44.0" prefWidth="255.0" text="Customer Detail" textFill="WHITE">
+      <Label layoutX="450.0" layoutY="27.0" prefHeight="67.0" prefWidth="300.0" text="Customer Detail" textFill="WHITE">
          <font>
-            <Font name="Agency FB" size="44.0" />
+            <Font name="Agency FB" size="56.0" />
          </font>
       </Label>
       <Label layoutX="40.0" layoutY="130.0" text="Username :" textFill="#833700">
@@ -42,32 +44,32 @@
             <Font name="Agency FB" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="username" layoutX="157.0" layoutY="130.0" prefHeight="34.0" prefWidth="169.0">
+      <Label fx:id="username" layoutX="157.0" layoutY="130.0" prefHeight="34.0" prefWidth="269.0">
          <font>
             <Font name="Agency FB" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="name" layoutX="122.0" layoutY="181.0" prefHeight="34.0" prefWidth="169.0">
+      <Label fx:id="name" layoutX="122.0" layoutY="181.0" prefHeight="34.0" prefWidth="307.0">
          <font>
             <Font name="Agency FB" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="email" layoutX="122.0" layoutY="237.0" prefHeight="34.0" prefWidth="169.0">
+      <Label fx:id="email" layoutX="122.0" layoutY="237.0" prefHeight="34.0" prefWidth="307.0">
          <font>
             <Font name="Agency FB" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="tel" layoutX="88.0" layoutY="289.0" prefHeight="34.0" prefWidth="169.0">
+      <Label fx:id="tel" layoutX="88.0" layoutY="289.0" prefHeight="34.0" prefWidth="239.0">
          <font>
             <Font name="Agency FB" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="idCardNumber" layoutX="207.0" layoutY="342.0" prefHeight="34.0" prefWidth="169.0">
+      <Label fx:id="idCardNumber" layoutX="207.0" layoutY="342.0" prefHeight="34.0" prefWidth="307.0">
          <font>
             <Font name="Agency FB" size="28.0" />
          </font>
       </Label>
-      <Label fx:id="plan" layoutX="107.0" layoutY="394.0" prefHeight="34.0" prefWidth="169.0">
+      <Label fx:id="plan" layoutX="107.0" layoutY="394.0" prefHeight="34.0" prefWidth="187.0">
          <font>
             <Font name="Agency FB" size="28.0" />
          </font>
@@ -77,5 +79,30 @@
             <Font name="Agency FB" size="24.0" />
          </font>
       </JFXButton>
+      <JFXButton layoutX="191.0" layoutY="529.0" onAction="#changeToReserveLocker" style="-fx-background-color: #76C3D7;" text="จอง Locker">
+         <font>
+            <Font name="paaymaay" size="42.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="187.0" layoutY="664.0" style="-fx-background-color: #76C3D7;" text="ตรวจสอบสถานะ Locker">
+         <font>
+            <Font name="paaymaay" size="42.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="130.0" fitWidth="135.0" layoutX="35.0" layoutY="631.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/status.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="101.0" layoutX="50.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/locker.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="413.0" fitWidth="418.0" layoutX="702.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/sports.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

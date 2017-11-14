@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #7F7F7F;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="locker.ReserveLockerController">
+   <children>
+      <Label layoutX="451.0" layoutY="28.0" text="Reserve a locker" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="56.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="type" layoutX="427.0" layoutY="366.0" prefHeight="54.0" prefWidth="347.0" unFocusColor="WHITE" />
+      <Label layoutX="448.0" layoutY="256.0" text="Select type of your stuff" textFill="#833700">
+         <font>
+            <Font name="Agency FB" size="40.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="confirmButton" layoutX="548.0" layoutY="502.0" style="-fx-background-color: #76C3D7;" text="Confirm">
+         <font>
+            <Font name="paaymaay" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backButton" layoutX="25.0" layoutY="735.0" onAction="#changeToCustomerDetail" style="-fx-background-color: #76C3D7;" text="Back">
+         <font>
+            <Font name="paaymaay" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
