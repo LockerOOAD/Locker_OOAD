@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -21,10 +22,60 @@
             <Font name="Agency FB" size="28.0" />
          </font>
       </Label>
-      <Label layoutX="40.0" layoutY="237.0" text="Name :" textFill="#833700">
+      <Label layoutX="40.0" layoutY="237.0" text="E-mail :" textFill="#833700">
          <font>
             <Font name="Agency FB" size="28.0" />
          </font>
       </Label>
+      <Label layoutX="40.0" layoutY="289.0" text="Tel :" textFill="#833700">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="342.0" text="ID Card Number :" textFill="#833700">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="394.0" text="Plan :" textFill="#833700">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="username" layoutX="157.0" layoutY="130.0" prefHeight="34.0" prefWidth="169.0">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="122.0" layoutY="181.0" prefHeight="34.0" prefWidth="169.0">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="email" layoutX="122.0" layoutY="237.0" prefHeight="34.0" prefWidth="169.0">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="tel" layoutX="88.0" layoutY="289.0" prefHeight="34.0" prefWidth="169.0">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="idCardNumber" layoutX="207.0" layoutY="342.0" prefHeight="34.0" prefWidth="169.0">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="plan" layoutX="107.0" layoutY="394.0" prefHeight="34.0" prefWidth="169.0">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="logout" layoutX="1070.0" layoutY="719.0" onAction="#logOutToLoginCustomer" style="-fx-background-color: #76C3D7;" text="Log Out">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </JFXButton>
    </children>
 </AnchorPane>
