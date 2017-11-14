@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #7F7F7F;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="locker.CustomerDetailController">
+   <children>
+      <Label layoutX="473.0" layoutY="44.0" prefHeight="44.0" prefWidth="255.0" text="Customer Detail" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="130.0" text="Username :" textFill="#833700">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="181.0" text="Name :" textFill="#833700">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="237.0" text="Name :" textFill="#833700">
+         <font>
+            <Font name="Agency FB" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
