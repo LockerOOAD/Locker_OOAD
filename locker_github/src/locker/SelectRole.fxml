@@ -19,7 +19,7 @@
             <Image url="@images/customer.png" />
          </image>
       </ImageView>
-      <JFXButton layoutX="138.0" layoutY="307.0" style="-fx-background-color: #76C3D7;" text="Staff">
+      <JFXButton layoutX="138.0" layoutY="307.0" onAction="#delete" style="-fx-background-color: #76C3D7;" text="Staff">
          <font>
             <Font size="28.0" />
          </font>

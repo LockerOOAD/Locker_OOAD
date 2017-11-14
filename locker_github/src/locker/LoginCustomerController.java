@@ -5,6 +5,7 @@
  */
 package locker;
 
+import DB.Student;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
@@ -20,6 +21,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 /**
  * FXML Controller class
@@ -36,7 +41,7 @@ public class LoginCustomerController implements Initializable {
     private JFXPasswordField customerPass;
 
     @FXML
-    private JFXTextField customerID;
+    private JFXTextField customerUsername;
 
     @FXML
     private JFXButton back;
@@ -57,14 +62,44 @@ public class LoginCustomerController implements Initializable {
         
     }
     
+    @FXML
+    public void changeSceneToRegister(ActionEvent event) throws IOException{
+        Parent registerParent = FXMLLoader.load(getClass().getResource("CustomerRegister.fxml"));
+        Scene RegisterScene = new Scene(registerParent);
+        
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        
+        window.setScene(RegisterScene);
+        window.show();
+        
+    }
+    
+    
     
     @FXML
     public void makeLogin(ActionEvent event) throws IOException{
-        String id = customerID.getText();
-        String password = customerPass.getText();
+        String username = customerUsername.getText().toString();
+        String password = customerPass.getText().toString();
         
-        if(id.equals("Kuy")&&password.equals("isas1234")){
-            
+        //String name = "haha"
+
+        
+        CustomerDB s;
+		
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("$dist/db/CustomerDB.odb");		
+	EntityManager em = emf.createEntityManager();
+                
+        em.getTransaction().begin();
+        
+        
+        Query q5 = em.createQuery("SELECT Password FROM CustomerDB s WHERE s.Username = :username", CustomerDB.class);
+        q5.setParameter("username", username).getSingleResult();
+        String temp = q5.setParameter("username", username).getSingleResult().toString();
+        System.out.println(temp);
+        System.out.println(password);
+        
+        if(password.equals(temp)){
+            System.out.println("Haha");
             Parent CustomerDetailParent = FXMLLoader.load(getClass().getResource("CustomerDetail.fxml"));
             Scene CustomerDetaileScene = new Scene(CustomerDetailParent);
             Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -75,6 +110,22 @@ public class LoginCustomerController implements Initializable {
         else{
             status.setText("Wrone ID or Password!!");
         }
+        
+        //Query q10 = em.createQuery("DELETE FROM Student s WHERE s.rollNo = :p");
+        //System.out.println("Deleted No of records: "+q4.getSingleResult());
+        
+//        if(id.equals("Kuy")&&password.equals("isas1234")){
+//            
+//            Parent CustomerDetailParent = FXMLLoader.load(getClass().getResource("CustomerDetail.fxml"));
+//            Scene CustomerDetaileScene = new Scene(CustomerDetailParent);
+//            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+//
+//            window.setScene(CustomerDetaileScene);
+//            window.show();
+//        }
+//        else{
+//            status.setText("Wrone ID or Password!!");
+//        }
     }
     
     @Override

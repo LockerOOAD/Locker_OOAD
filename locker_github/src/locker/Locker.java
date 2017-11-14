@@ -5,11 +5,17 @@
  */
 package locker;
 
+import DB.Student;
+import java.util.List;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 /**
  *
@@ -19,7 +25,7 @@ public class Locker extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("SelectRole.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("CustomerRegister.fxml"));
         
         Scene scene = new Scene(root);
         
@@ -32,6 +38,7 @@ public class Locker extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+        
     }
     
 }
