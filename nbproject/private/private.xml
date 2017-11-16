@@ -4,11 +4,17 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/locker/CustomerRegisterController.java</file>
-            <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/locker/LoginCustomer.fxml</file>
+            <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/DB/CustomerDB.java</file>
+            <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/locker/check.java</file>
+            <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/locker/LoginAdminController.java</file>
             <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/locker/LoginCustomerController.java</file>
+            <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/locker/SelectRoleController.java</file>
+            <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/locker/ShowCustomerListController.java</file>
+            <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/DB/editLockerDB.java</file>
             <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/locker/CustomerDetailController.java</file>
             <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/locker/Locker.java</file>
-            <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/locker/CustomerDB.java</file>
+            <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/DB/LockerDB.java</file>
+            <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/DB/ShowCustomerDB.java</file>
             <file>file:/C:/Users/Corerid/Documents/GitHub/Locker_OOAD/src/locker/ReserveLockerController.java</file>
         </group>
     </open-files>

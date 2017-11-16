@@ -5,6 +5,7 @@
  */
 package locker;
 
+import DB.CustomerDB;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -15,10 +16,11 @@ import javax.persistence.Query;
  *
  * @author Corerid
  */
-public class ShowCustomerDB {
-        public static void main(String[] args) {
-            
-                CustomerDB s;
+public class check {
+    
+            public static void main(String[] args){
+    
+            CustomerDB s;
 		
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("$dist/db/CustomerDB.odb");		
 		EntityManager em = emf.createEntityManager();
@@ -36,10 +38,9 @@ public class ShowCustomerDB {
                 //System.out.println("Deleted No of records: "+q10.setParameter("p", 0).executeUpdate());
 		
 		List<CustomerDB> results = q6.getResultList();
-		for (CustomerDB p : results) {
+                		for (CustomerDB p : results) {
 			System.out.println(p);
 		}
-                em.getTransaction().commit();
-		
-        }
+            }
+    
 }

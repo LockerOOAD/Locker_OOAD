@@ -5,7 +5,7 @@
  */
 package locker;
 
-import DB.Student;
+import DB.CustomerDB;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;

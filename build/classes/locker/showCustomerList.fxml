@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #7F7F7F;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="locker.ShowCustomerListController">
+   <children>
+      <AnchorPane layoutX="233.0" layoutY="29.0" prefHeight="716.0" prefWidth="920.0">
+         <children>
+            <TableView fx:id="haha" layoutY="1.0" prefHeight="716.0" prefWidth="945.0">
+              <columns>
+                <TableColumn fx:id="username" prefWidth="156.0" text="Username" />
+                <TableColumn fx:id="name" prefWidth="209.0" text="Name" />
+                  <TableColumn fx:id="plan" prefWidth="82.0" text="Plan" />
+                  <TableColumn fx:id="tel" prefWidth="139.0" text="Tel" />
+                  <TableColumn fx:id="email" prefWidth="195.0" text="E-mail" />
+                  <TableColumn fx:id="idCardNumber" prefWidth="163.0" text="Id Card Number" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

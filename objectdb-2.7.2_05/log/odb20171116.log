@@ -1,0 +1,57 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-16 03:25:01 #1 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' has been recovered (tr. 1-2)
+
+[2017-11-16 03:25:01 #2 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is opened by 12800@Corerid
+
+[2017-11-16 03:25:01 #3 store] 
+Configuration path: C:\Users\Corerid\Documents\GitHub\Locker_OOAD\objectdb-2.7.2_05\objectdb.conf
+
+[2017-11-16 03:25:23 #4 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is closed by 12800@Corerid
+
+[2017-11-16 03:25:23 #5 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\LockerDB.odb' is opened by 12800@Corerid
+
+[2017-11-16 03:25:23 #6 store] 
+Configuration path: C:\Users\Corerid\Documents\GitHub\Locker_OOAD\objectdb-2.7.2_05\objectdb.conf
+
+[2017-11-16 03:25:32 #7 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\LockerDB.odb' is closed by 12800@Corerid
+
+[2017-11-16 03:25:32 #8 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is opened by 12800@Corerid
+
+[2017-11-16 03:25:32 #9 store] 
+Configuration path: C:\Users\Corerid\Documents\GitHub\Locker_OOAD\objectdb-2.7.2_05\objectdb.conf
+
+[2017-11-16 03:25:37 #10 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is closed by 12800@Corerid
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-16 03:26:58 #1 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is opened by 6352@Corerid
+
+[2017-11-16 03:26:58 #2 store] 
+Configuration path: C:\Users\Corerid\Documents\GitHub\Locker_OOAD\objectdb-2.7.2_05\objectdb.conf
+
+[2017-11-16 03:27:45 #3 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is closed by 6352@Corerid
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-16 03:46:15 #1 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' has been recovered (tr. 10-11)
+
+[2017-11-16 03:46:16 #2 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is opened by 760@Corerid
+
+[2017-11-16 03:46:16 #3 store] 
+Configuration path: C:\Users\Corerid\Documents\GitHub\Locker_OOAD\objectdb-2.7.2_05\objectdb.conf
+
+[2017-11-16 03:46:50 #4 store] 
+Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is closed by 760@Corerid
+

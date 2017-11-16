@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package locker;
+package DB;
 
 import javax.persistence.Entity;
 
@@ -14,7 +14,7 @@ import javax.persistence.Entity;
 @Entity
 public class CustomerDB {
     
-        private int PrimaryKey;
+        //private int PrimaryKey;
         private String Username;
 	private String Password;
         private String Name;
@@ -24,8 +24,8 @@ public class CustomerDB {
         private String Plan;
         
        
-	CustomerDB(int PrimaryKey, String Username, String Password, String Name, String Tel, String Email, String IdCardNumber, String Plan){
-                this.PrimaryKey = PrimaryKey;
+	public CustomerDB(String Username, String Password, String Name, String Tel, String Email, String IdCardNumber, String Plan){
+                //this.PrimaryKey = PrimaryKey;
 		this.Username = Username;
                 this.Password = Password;
                 this.Name = Name;
@@ -35,9 +35,9 @@ public class CustomerDB {
                 this.Plan = Plan;     
 	}
         
-        public int getPrimaryKey() {
-		return PrimaryKey;
-	}
+//        public int getPrimaryKey() {
+//		return PrimaryKey;
+//	}
 
 	public String getUsername() {
 		return Username;
@@ -69,7 +69,7 @@ public class CustomerDB {
 
 	@Override
 	public String toString() {
-		return String.format("(PrimKey: %d, Username: %s, Password: %s, Name: %s, E-mail: %s, Tel: %s, ID Card Number: %s, Plan: %s)", 
-                        this.PrimaryKey, this.Username, this.Password, this.Name, this.Email, this.Tel, this.IdCardNumber, this.Plan);
+		return String.format("(Username: %s, Password: %s, Name: %s, E-mail: %s, Tel: %s, ID Card Number: %s, Plan: %s)", 
+                        this.Username, this.Password, this.Name, this.Email, this.Tel, this.IdCardNumber, this.Plan);
 	}
 }

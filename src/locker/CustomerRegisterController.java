@@ -5,6 +5,8 @@
  */
 package locker;
 
+import DB.CustomerDB;
+import DB.ShowCustomerDB;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
@@ -21,6 +23,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -81,6 +84,9 @@ public class CustomerRegisterController implements Initializable {
     
     public void addData(ActionEvent event) throws IOException{
         
+        Stage stage;
+        Parent root;
+        
         String username_s = username.getText();
         String password_s = password.getText();
         String name_s = name.getText();
@@ -101,15 +107,40 @@ public class CustomerRegisterController implements Initializable {
         Query q6 = em.createQuery("SELECT s FROM CustomerDB s"); 
         
 	List<CustomerDB> results = q2.getResultList();
+                            em.close();
+                    emf.close();
         
+        //Check whether username already taken
         if(results.contains(username_s)){
-            notiSameUsername.setText("Same username!");
+                    
+            stage = new Stage();
+            root = FXMLLoader.load(getClass().getResource("sameUsernamePopup.fxml"));
+            stage.setScene(new Scene(root));
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initOwner(RegisterButton.getScene().getWindow());
+            stage.showAndWait();
+            
         }
         else{
-            s = new CustomerDB(((int)q3.getSingleResult())+1, username_s, password_s, name_s, tel_s, email_s, idCardNumber_s, plan_s);
-            em.persist(s);
-                
-            em.getTransaction().commit();
+               
+            ShowCustomerDB b = new ShowCustomerDB();
+            
+            b.addData(1, username_s, password_s, name_s, tel_s, email_s, idCardNumber_s, plan_s);
+            
+            Parent successParent = FXMLLoader.load(getClass().getResource("SuccessRegisterCustomer.fxml"));
+            Scene Success = new Scene(successParent);
+        
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        
+            window.setScene(Success);
+            window.show();
+
+		
+//            em.getTransaction().begin();
+//            s = new CustomerDB(((int)q3.getSingleResult())+1, username_s, password_s, name_s, tel_s, email_s, idCardNumber_s, plan_s);
+//            em.persist(s);
+//                
+//            em.getTransaction().commit();
         }
         
     }

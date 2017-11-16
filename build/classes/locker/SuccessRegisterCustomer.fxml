@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="locker.SuccessRegisterCustomerController">
+   <children>
+      <JFXButton fx:id="backLogin" layoutX="236.0" layoutY="319.0" onAction="#goBackToLogin" style="-fx-background-color: #76C3D7;" text="Go back to login menu">
+         <font>
+            <Font name="LilyUPC" size="28.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="177.0" fitWidth="173.0" layoutX="258.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Check-2-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="209.0" layoutY="31.0" text="Register Successful" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="46.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
