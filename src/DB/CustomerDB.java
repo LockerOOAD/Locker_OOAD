@@ -6,6 +6,9 @@
 package DB;
 
 import javax.persistence.Entity;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
 /**
  *
@@ -23,6 +26,8 @@ public class CustomerDB {
         private String IdCardNumber;
         private String Plan;
         
+        protected float cost = 0;   //cost
+        
        
 	public CustomerDB(String Username, String Password, String Name, String Tel, String Email, String IdCardNumber, String Plan){
                 //this.PrimaryKey = PrimaryKey;
@@ -38,36 +43,42 @@ public class CustomerDB {
 //        public int getPrimaryKey() {
 //		return PrimaryKey;
 //	}
-
-	public String getUsername() {
-		return Username;
-	}
-
-	public String getPassword() {
-		return Password;
-	}
-
-	public String getName() {
-		return Name;
-	}
         
-        public String getTel() {
-		return Tel;
-	}
-
-	public String getEmail() {
-		return Email;
-	}
+         public void setCost(float cost) {
+            this.cost = cost;
+        }  //cost
         
-        public String getIdCardNumber() {
-		return IdCardNumber;
-	}
+        public float discount(){            //calculate discount
+            return this.cost * 0;
+        }
+        
+        public float realCost(){
+            return this.cost - discount(); 
+        }  // Calculate realcost(cost - discount)
+        
+        
+        
+        ////////////////////////////////
+        public void addData(String Username, String Password, String Name, String Tel, String Email, String IdCardNumber, String Plan){
+        
 
-	public String getPlan() {
-		return Plan;
-	}
+        CustomerDB s;
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("$dist/db/CustomerDB.odb");		
+	EntityManager em = emf.createEntityManager();
+        
+        em.getTransaction().begin();
+        
+        s = new CustomerDB(Username, Password, Name, Tel, Email, IdCardNumber, Plan);
+	em.persist(s);
 
-	@Override
+
+	em.getTransaction().commit();
+    }
+        ////////////////////////////////
+        
+
+         
+         @Override
 	public String toString() {
 		return String.format("(Username: %s, Password: %s, Name: %s, E-mail: %s, Tel: %s, ID Card Number: %s, Plan: %s)", 
                         this.Username, this.Password, this.Name, this.Email, this.Tel, this.IdCardNumber, this.Plan);

@@ -6,6 +6,9 @@
 package locker;
 
 import DB.CustomerDB;
+import DB.Customer_Gold;
+import DB.Customer_Platinum;
+import DB.Customer_Silver;
 import DB.ShowCustomerDB;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -123,9 +126,20 @@ public class CustomerRegisterController implements Initializable {
         }
         else{
                
-            ShowCustomerDB b = new ShowCustomerDB();
+            CustomerDB b ;
             
-            b.addData(1, username_s, password_s, name_s, tel_s, email_s, idCardNumber_s, plan_s);
+            switch(plan_s){
+                
+                case "Silver" : b = new Customer_Silver(username_s, password_s, name_s, tel_s, email_s, idCardNumber_s, plan_s);    break;
+                case "Gold" : b = new Customer_Gold(username_s, password_s, name_s, tel_s, email_s, idCardNumber_s, plan_s);    break;
+                case "Platinum" : b = new Customer_Platinum(username_s, password_s, name_s, tel_s, email_s, idCardNumber_s, plan_s);  break;
+                default :   b = new CustomerDB(username_s, password_s, name_s, tel_s, email_s, idCardNumber_s, plan_s);
+                
+            }
+            
+            
+             b.addData(username_s, password_s, name_s, tel_s, email_s, idCardNumber_s, plan_s);
+         
             
             Parent successParent = FXMLLoader.load(getClass().getResource("SuccessRegisterCustomer.fxml"));
             Scene Success = new Scene(successParent);
@@ -135,12 +149,7 @@ public class CustomerRegisterController implements Initializable {
             window.setScene(Success);
             window.show();
 
-		
-//            em.getTransaction().begin();
-//            s = new CustomerDB(((int)q3.getSingleResult())+1, username_s, password_s, name_s, tel_s, email_s, idCardNumber_s, plan_s);
-//            em.persist(s);
-//                
-//            em.getTransaction().commit();
+
         }
         
     }

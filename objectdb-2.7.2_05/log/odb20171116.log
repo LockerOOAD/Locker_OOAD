@@ -55,3 +55,60 @@ Configuration path: C:\Users\Corerid\Documents\GitHub\Locker_OOAD\objectdb-2.7.2
 [2017-11-16 03:46:50 #4 store] 
 Database 'C:\Users\Corerid\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is closed by 760@Corerid
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-16 15:22:25 #1 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' has been recovered (tr. 1-2)
+
+[2017-11-16 15:22:25 #2 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is opened by 9780@DESKTOP-CIA7TGO
+
+[2017-11-16 15:22:25 #3 store] 
+Configuration path: C:\Users\natht\Documents\GitHub\Locker_OOAD\objectdb-2.7.2_05\objectdb.conf
+
+[2017-11-16 15:22:36 #4 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is closed by 9780@DESKTOP-CIA7TGO
+
+[2017-11-16 15:22:36 #5 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is opened by 9780@DESKTOP-CIA7TGO
+
+[2017-11-16 15:22:36 #6 store] 
+Configuration path: C:\Users\natht\Documents\GitHub\Locker_OOAD\objectdb-2.7.2_05\objectdb.conf
+
+[2017-11-16 15:23:44 #7 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is closed by 9780@DESKTOP-CIA7TGO
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-16 15:27:22 #1 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is opened by 7444@DESKTOP-CIA7TGO
+
+[2017-11-16 15:27:22 #2 store] 
+Configuration path: C:\Users\natht\Documents\GitHub\Locker_OOAD\objectdb-2.7.2_05\objectdb.conf
+
+[2017-11-16 15:27:46 #3 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is closed by 7444@DESKTOP-CIA7TGO
+
+[2017-11-16 15:27:46 #4 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is opened by 7444@DESKTOP-CIA7TGO
+
+[2017-11-16 15:27:46 #5 store] 
+Configuration path: C:\Users\natht\Documents\GitHub\Locker_OOAD\objectdb-2.7.2_05\objectdb.conf
+
+[2017-11-16 15:33:42 #6 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is closed by 7444@DESKTOP-CIA7TGO
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2017-11-16 15:34:17 #1 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' has been recovered (tr. 3-3)
+
+[2017-11-16 15:34:17 #2 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is opened by 392@DESKTOP-CIA7TGO
+
+[2017-11-16 15:34:17 #3 store] 
+Configuration path: C:\Users\natht\Documents\GitHub\Locker_OOAD\objectdb-2.7.2_05\objectdb.conf
+
+[2017-11-16 15:34:33 #4 store] 
+Database 'C:\Users\natht\Documents\GitHub\Locker_OOAD\$dist\db\CustomerDB.odb' is closed by 392@DESKTOP-CIA7TGO
+
